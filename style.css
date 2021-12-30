@@ -10,7 +10,7 @@ body {
   /* overflow: hidden; */
   margin: 0;
   padding: 0;
-  background-color: #d4e9ff;
+  background-color: #ffe270;
 }
 h2 {
   position: fixed;
@@ -45,23 +45,45 @@ section {
 .image img {
   position: absolute;
   width: 100%;
+  opacity: 0.95;
   height: 100%;
+  filter: grayscale(1);
+  transition: 1s;
 }
 .image .broken1 {
   clip-path: polygon(0% 0%, 21% 40%, 40% 30%, 45% 14%, 58% 0);
 }
+.image .broken1:hover {
+  filter: grayscale(0);
+}
 .image .broken2 {
   clip-path: polygon(100% 0, 100% 60%, 40% 30%, 45% 14%, 58% 0);
+}
+.image .broken2:hover {
+  filter: grayscale(0);
 }
 .image .broken3 {
   clip-path: polygon(100% 100%, 100% 60%, 40% 30%, 33% 65%, 50% 100%);
 }
+.image .broken3:hover {
+  filter: grayscale(0);
+}
 .image .broken4 {
   clip-path: polygon(0 100%, 0 69%, 40% 30%, 33% 65%, 50% 100%);
 }
+.image .broken4:hover {
+  filter: grayscale(0);
+}
+
 .image .broken5 {
   clip-path: polygon(40% 30%, 0% 51%, 0% 69%);
 }
+.image .broken5:hover {
+  filter: grayscale(0);
+}
 .image .broken6 {
   clip-path: polygon(0% 0%, 0% 51%, 21% 40%);
+}
+.image .broken6:hover {
+  filter: grayscale(0);
 }
